@@ -1,5 +1,5 @@
 {% set name = "bcdp" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a161d79f16e319524ba9e9ea2f308541407cb4a78121996a8f9a2f89806896ef
+  sha256: 4fc21ab31f30a01292c15b8f342b12aae1ef9f04bb6c9e955a3e23eec2dfdb45
 
 build:
   noarch: python
