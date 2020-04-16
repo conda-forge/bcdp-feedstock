@@ -1,5 +1,5 @@
 {% set name = "bcdp" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4fc21ab31f30a01292c15b8f342b12aae1ef9f04bb6c9e955a3e23eec2dfdb45
+  sha256: 6bf3bb7525a6fcaa13629984c732006d9537c844424673361d51757c543fedb3
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   home: https://github.com/bcdp/bcdp
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Library for generating climate model evaluation pipelines.'
+  summary: Library for generating climate model evaluation pipelines.
   dev_url: https://github.com/bcdp/bcdp
 
 extra:
