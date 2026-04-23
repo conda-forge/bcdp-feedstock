@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   home: https://github.com/bcdp/bcdp
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Library for generating climate model evaluation pipelines.'
+  summary: Library for generating climate model evaluation pipelines.
   dev_url: https://github.com/bcdp/bcdp
 
 extra:
